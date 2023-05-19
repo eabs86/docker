@@ -1,10 +1,10 @@
-version: '3.8'
+version: '3.7'
 
 services:
   apache:
     image: httpd
     container_name: meu-site
     ports:
-    - '80:80'
+    - '8080:80'
     volumes:
     - ./meusite:/usr/local/apache2/htdocs
